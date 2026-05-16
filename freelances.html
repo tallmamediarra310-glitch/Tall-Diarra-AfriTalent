@@ -13,13 +13,299 @@ rel="stylesheet">
 </head>
 <body>
  <!-- Le contenu de la page sera ajoute ici -->
+<!-- NAVBAR (identique) -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="#">
+      <img src="images/logo1.png" alt="AfriTalent" width="40" height="40" class="me-2">
+      AfriTalent
+       </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Accueil</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="freelances.html">Freelances</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="tarifs.html">Tarifs</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">À propos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+
+      </ul>
+
+<form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- MAIN -->
+<main>
+
+<div class="container my-4 text-center">
+  <button class="btn btn-outline-primary" data-filter="web">Web</button>
+  <button class="btn btn-outline-primary" data-filter="design">Design</button>
+  <button class="btn btn-outline-primary" data-filter="marketing">Marketing</button>
+  <button class="btn btn-outline-primary" data-filter="data">Data</button>
+  <button class="btn btn-outline-primary" data-filter="devops">DevOps</button>
+  <button class="btn btn-outline-primary" data-filter="redaction">Rédaction</button>
+</div>
+
+<section id="freelanceGrid" class="row g-4">
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="card h-100 shadow-sm" data-category="web">
+      <img src="images/freelances1.jpg" class="card-img-top" height="400" alt="Amadou Koné">
+      <div class="card-body d-flex flex-column">
+        <h2 class="h5 card-title">Asmao sakho</h2>
+        <p class="text-secondary small mb-2">Développement Web — React & Node</p>
+        <p class="card-text small flex-grow-1">
+          Full-stack orienté produit : API propres, interfaces soignées et livraisons itératives.
+        </p>
+        <p class="fw-semibold mb-2">25 000 FCFA / h</p>
+        <p class="mb-3 text-warning">★★★★☆</p>
+        <a href="freelances.html" class="btn btn-outline-primary mt-auto">Voir le profil</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="card h-100 shadow-sm" data-category="design">
+      <img src="images/freelances2.jpg" class="card-img-top" height="400" alt="Fatou Diop">
+      <div class="card-body d-flex flex-column">
+        <h2 class="h5 card-title">Ali Diop</h2>
+        <p class="text-secondary small mb-2">Design UI/UX — Figma</p>
+        <p class="card-text small flex-grow-1">
+          Design systems, tests utilisateurs et handoff précis pour les équipes dev.
+        </p>
+        <p class="fw-semibold mb-2">15 000 FCFA / h</p>
+        <p class="mb-3 text-warning">★★★★★</p>
+        <a href="freelances.html" class="btn btn-outline-primary mt-auto">Voir le profil</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="card h-100 shadow-sm" data-category="marketing">
+      <img src="images/freelances3.jpg" class="card-img-top" height="400" alt="Ibrahim Sow">
+      <div class="card-body d-flex flex-column">
+        <h2 class="h5 card-title">Nogaye Sylla</h2>
+        <p class="text-secondary small mb-2">Marketing Digital — SEO & contenus</p>
+        <p class="card-text small flex-grow-1">
+          Stratégie éditoriale et optimisation progressive pour le trafic qualifié.
+        </p>
+        <p class="fw-semibold mb-2">30 000 FCFA / h</p>
+        <p class="mb-3 text-warning">★★★★☆</p>
+        <a href="freelances.html" class="btn btn-outline-primary mt-auto">Voir le profil</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="card h-100 shadow-sm" data-category="data">
+      <img src="images/freelances4.jpg" class="card-img-top" height="400" alt="Aïcha Ngom">
+      <div class="card-body d-flex flex-column">
+        <h2 class="h5 card-title">Modou Toure</h2>
+        <p class="text-secondary small mb-2">Data & IA — Python</p>
+        <p class="card-text small flex-grow-1">
+          Tableaux de bord, modèles simples et documentation pour les équipes métier.
+        </p>
+        <p class="fw-semibold mb-2">50 000 FCFA / h</p>
+        <p class="mb-3 text-warning">★★★★★</p>
+        <a href="freelances.html" class="btn btn-outline-primary mt-auto">Voir le profil</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="card h-100 shadow-sm" data-category="devops">
+      <img src="images/freelances5.jpg" class="card-img-top" height="400" alt="Rokhaya Diacene">
+      <div class="card-body d-flex flex-column">
+        <h2 class="h5 card-title">Aminata Dia</h2>
+        <p class="text-secondary small mb-2">DevOps & Cloud — CI/CD</p>
+        <p class="card-text small flex-grow-1">
+          Pipelines fiables, monitoring et réduction des incidents en production.
+        </p>
+        <p class="fw-semibold mb-2">65 000 FCFA / h</p>
+        <p class="mb-3 text-warning">★★★★☆</p>
+        <a href="freelances.html" class="btn btn-outline-primary mt-auto">Voir le profil</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="card h-100 shadow-sm" data-category="web">
+      <img src="images/freelances6.jpg" class="card-img-top" height="400" alt="Mami Traoré">
+      <div class="card-body d-flex flex-column">
+        <h2 class="h5 card-title">Abdou Ndiaye</h2>
+        <p class="text-secondary small mb-2">Développement Web — Laravel</p>
+        <p class="card-text small flex-grow-1">
+          Back-office robuste, rôles utilisateurs et intégrations tierces sécurisées.
+        </p>
+        <p class="fw-semibold mb-2">27 500 FCFA / h</p>
+        <p class="mb-3 text-warning">★★★★☆</p>
+        <a href="freelances.html" class="btn btn-outline-primary mt-auto">Voir le profil</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="card h-100 shadow-sm" data-category="redaction">
+      <img src="images/freelances7.jpg" class="card-img-top" height="400" alt="Omar Ba">
+      <div class="card-body d-flex flex-column">
+        <h2 class="h5 card-title">Ousmane Ba</h2>
+        <p class="text-secondary small mb-2">Rédaction Tech — documentation</p>
+        <p class="card-text small flex-grow-1">
+          Guides clairs, notes de version et tutoriels pour développeurs.
+        </p>
+        <p class="fw-semibold mb-2">33 000 FCFA / h</p>
+        <p class="mb-3 text-warning">★★★★★</p>
+        <a href="freelances.html" class="btn btn-outline-primary mt-auto">Voir le profil</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="card h-100 shadow-sm" data-category="design">
+      <img src="images/freelances8.jpg" class="card-img-top" height="400" alt="Salimata Haidara">
+      <div class="card-body d-flex flex-column">
+        <h2 class="h5 card-title">Mame Diarra Tall</h2>
+        <p class="text-secondary small mb-2">Design UI/UX — accessibilité</p>
+        <p class="card-text small flex-grow-1">
+          Interfaces inclusives, contrastes vérifiés et composants réutilisables.
+        </p>
+        <p class="fw-semibold mb-2">38 850 FCFA / h</p>
+        <p class="mb-3 text-warning">★★★★☆</p>
+        <a href="freelances.html" class="btn btn-outline-primary mt-auto">Voir le profil</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="card h-100 shadow-sm" data-category="web">
+      <img src="images/freelances9.jpg" class="card-img-top" height="400" alt="Youssef Dabo">
+      <div class="card-body d-flex flex-column">
+        <h2 class="h5 card-title">Babacar Mbathie</h2>
+        <p class="text-secondary small mb-2">Développement Web — WordPress & perf</p>
+        <p class="card-text small flex-grow-1">
+          Sites vitrines rapides, SEO technique et maintenance sans surprise.
+        </p>
+        <p class="fw-semibold mb-2">24 900 FCFA / h</p>
+        <p class="mb-3 text-warning">★★★★☆</p>
+        <a href="freelances.html" class="btn btn-outline-primary mt-auto">Voir le profil</a>
+      </div>
+    </article>
+  </div>
+
+</section>
+</main>
+
+<!-- FOOTER -->
+ <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Colonne 1 : À propos -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer-title"><i class="bi bi-lightning-charge-fill"></i> AfriTalent</h4>
+          <p class="footer-text">La plateforme qui connecte les meilleurs freelances tech africains avec les entreprises du monde entier.</p>
+          <div class="social-icons">
+
+          <a href="https://www.linkedin.com" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+         </div>
+         </div>
+
+        <!-- Colonne 2 : Liens utiles -->
+        <div class="col-6 col-md-3 col-lg-3">
+          <h4 class="footer-title">Liens utiles</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="freelances.html">Trouver un freelance</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Ressources -->
+        <div class="col-6 col-md-3 col-lg-3">
+          <h4 class="footer-title">Ressources</h4>
+          <ul class="footer-links">
+            <li><a href="#">Blog Tech</a></li>
+            <li><a href="#">Guide du freelance</a></li>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 4 : Contact -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="footer-title">Contact</h4>
+          <address class="footer-text" style="font-style: normal;">
+            <p><i class="bi bi-envelope-fill"></i> contact@afritalent.com</p>
+            <p><i class="bi bi-telephone-fill"></i> +221 77 000 00 00</p>
+            <p><i class="bi bi-geo-alt-fill"></i> Dakar, Sénégal</p>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Copyright dynamique (année via JavaScript) -->
+      <hr class="footer-hr" />
+      <p class="footer-copy text-center">
+        &copy; <span id="currentYear"></span> AfriTalent. Tous droits réservés.
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button id="backToTop" aria-label="Retourner en haut de la page" title="Haut de page">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
  <!-- Bootstrap 5 via CDN : script JavaScript -->
  <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 ></script>
  <!-- Votre script JavaScript -->
  <script src="js/main.js"></script>
- </body>
-</html>
 </body>
 </html>

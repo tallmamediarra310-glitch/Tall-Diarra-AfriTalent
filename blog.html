@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>AfriTalent — Contacts</title>
- <!-- Bootstrap 5 via CDN : feuille de style -->
- <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
- <!-- Votre feuille de style personnelle -->
- <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — Blog</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
- <!-- Le contenu de la page sera ajoute ici -->
-  <!-- Navbar -->
- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
 
     <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="#">
@@ -53,7 +58,7 @@ rel="stylesheet">
           <a class="nav-link" href="blog.html">Blog</a>
         </li>
 
-      </ul> 
+      </ul>
 
 <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -64,63 +69,141 @@ rel="stylesheet">
   </div>
 </nav>
 
+<!--  BLOG -->
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h1 class="fw-bold">Notre Blog</h1>
+    <p class="text-muted">Conseils, astuces et actualités sur le freelancing en Afrique</p>
+  </div>
+</section>
 
-  <!-- Main -->
-  <main class="py-5">
-    <div class="container">
-      <h1>Contactez-nous</h1>
-      <p>Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.</p>
+<!-- ARTICLES -->
+<section class="py-5 bg-light">
 
-      <div class="row">
-        <div class="col-md-6">
-          <form id="contactForm">
-            <div class="mb-3">
-              <label for="Prenom" class="form-label">Prenom</label>
-              <input type="text" class="form-control" id="Prenom" required>
-              <div class="invalid-feedback">Veuillez entrer votre Prenom.</div>
-            </div>
-            <div class="mb-3">
-              <label for="nom" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="nom" required>
-              <div class="invalid-feedback">Veuillez entrer votre nom.</div>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
-              <div class="invalid-feedback">Veuillez entrer un email valide.</div>
-            </div>
-            <div class="mb-3">
-              <label for="sujet" class="form-label">Sujet</label>
-              <select class="form-select" id="sujet" required>
-                <option value="">Choisissez un sujet</option>
-                <option value="info">Informations</option>
-                <option value="support">Support</option>
-                <option value="partenariat">Partenariat</option>
-              </select>
-              <div class="invalid-feedback">Veuillez sélectionner un sujet.</div>
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="5" required minlength="20"></textarea>
-              <div class="invalid-feedback">Votre message doit contenir au moins 20 caractères.</div>
-            </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
-            <div id="successMessage" class="text-success mt-3" style="display:none;">Message envoyé avec succès !</div>
-          </form>
+  <div class="container">
+
+    <div class="row g-4">
+
+      <!-- ARTICLE 1 -->
+
+      <div class="col-md-4">
+
+        <div class="card h-100 border-0 shadow-sm">
+
+          <img src="images/blog1.jpg" class="card-img-top" alt="blog1">
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="fw-bold">
+
+              Comment trouver un freelance fiable ?
+
+            </h5>
+
+            <p class="text-muted small">
+
+              Trouver un freelance fiable demande de la méthode. Il faut d'abord vérifier son portfolio pour voir ses réalisations.
+
+              Ensuite, lire les avis clients permet de connaître sa réputation.
+
+              Enfin, il est conseillé de commencer par un petit projet test avant de lui confier un travail important.
+
+            </p>
+
+            <a href="blog.html" class="btn btn-outline-dark btn-sm mt-auto">
+
+              Lire l'article
+
+            </a>
+
+          </div>
+
         </div>
-        <div class="col-md-6">
-          <h5>Informations de contact</h5>
-          <p>Email : contact@afritalent.com</p>
-          <p>Téléphone : +221 77 123 45 67</p>
-          <p>Adresse : Dakar, Sénégal</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m80..."width="100%" height="250" style="border:0;" allowfullscreen=""loading="lazy"></iframe>
-        </div>
+
       </div>
-    </div>
-  </main>
 
-  <!-- Footer -->
- <!-- ========== FOOTER ========== -->
+      <!-- ARTICLE 2 -->
+
+      <div class="col-md-4">
+
+        <div class="card h-100 border-0 shadow-sm">
+
+          <img src="images/blog2.jpg" class="card-img-top" alt="blog2">
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="fw-bold">
+
+              Top métiers freelances en Afrique
+
+            </h5>
+
+            <p class="text-muted small">
+
+              Le freelancing en Afrique est en forte croissance grâce au digital. Les métiers les plus demandés sont le développement web,
+
+              le design graphique, le marketing digital et la rédaction web.
+
+              Ces domaines offrent de nombreuses opportunités et permettent de travailler avec des clients internationaux.
+
+            </p>
+
+            <a href="blog.html" class="btn btn-outline-dark btn-sm mt-auto">
+
+              Lire l'article
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ARTICLE 3 -->
+
+      <div class="col-md-4">
+
+        <div class="card h-100 border-0 shadow-sm">
+
+          <img src="images/blog3.jpg" class="card-img-top" alt="blog3">
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="fw-bold">
+
+              Réussir en freelance
+
+            </h5>
+
+            <p class="text-muted small">
+
+              Réussir en freelance demande de la discipline et de la régularité. Il faut d'abord bien organiser son temps pour respecter les délais.
+
+              Ensuite, il est important de bien communiquer avec les clients pour éviter les malentendus.
+
+              Enfin, il faut toujours fournir un travail de qualité pour satisfaire le client et obtenir plus de missions.
+
+            </p>
+
+            <a href="blog.html" class="btn btn-outline-dark btn-sm mt-auto">
+
+              Lire l'article
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- FOOTER -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="row g-4">
@@ -133,19 +216,19 @@ rel="stylesheet">
             <div class="social-icons">
 
            <a href="https://www.linkedin.com" target="_blank">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="https://twitter.com" target="_blank">
+             <i class="bi bi-linkedin"></i>
+           </a>
+           <a href="https://twitter.com" target="_blank">
             <i class="bi bi-twitter-x"></i>
-          </a>
+           </a>
           <a href="https://www.instagram.com" target="_blank">
-           <i class="bi bi-instagram"></i>
+            <i class="bi bi-instagram"></i>
           </a>
          <a href="https://www.facebook.com" target="_blank">
-          <i class="bi bi-facebook"></i>
+         <i class="bi bi-facebook"></i>
          </a>
+         </div>
         </div>
-          </div>
 
         <!-- Colonne 2 : Liens utiles -->
         <div class="col-6 col-md-3 col-lg-3">
@@ -193,14 +276,8 @@ rel="stylesheet">
     </div>
   </footer>
 
-  <!-- Bouton retour en haut -->
-  <button id="backToTop" aria-label="Retourner en haut de la page" title="Haut de page">
-    <i class="bi bi-arrow-up-short"></i>
-  </button>
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
- <!-- Votre script JavaScript -->
- <script src="js/main.js"></script>
- </body>
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
