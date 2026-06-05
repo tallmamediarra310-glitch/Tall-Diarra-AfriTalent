@@ -14,7 +14,12 @@ rel="stylesheet">
 </head>
 <body>
  <!-- Le contenu de la page sera ajoute ici -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="position-fixed top-0 end-0 m-2">
+  <button id="darkToggle" class="btn btn-outline-dark">
+    🌙
+  </button>
+</div>
+<nav class="navbar navbar-expand-lg bg-info fixed-top shadow-sm">
   <div class="container-fluid">
 
     <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="index.html">
@@ -25,7 +30,7 @@ rel="stylesheet">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-wrap">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
         </li>
@@ -51,121 +56,165 @@ rel="stylesheet">
 
       </ul>
 
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
       <a href="contact.html" class="btn btn-primary ms-3">
         Rejoindre AfriTalent
       </a>
-
+      
     </div>
   </div>
 </nav>
-<section class="position-relative text-white vh-100 overflow-hidden">
-
+<section class="hero position-relative text-white vh-100 overflow-hidden">
 
   <img src="images/acceuil.jpg"
        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
        alt="Accueil">
 
+       
+  <div class="hero-overlay"></div>
 
-  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+  <div class="container hero-content text-start position-relative">
 
-  
-  <div class="container h-100 d-flex flex-column justify-content-center position-relative">
-
+    <!-- TEXTE + BOUTONS -->
     <h1>Trouvez le talent africain qu'il vous faut</h1>
 
-<h2 class="fs-5">
-  Connectez-vous aux meilleurs freelances africains rapidement
-</h2>
+    <h2 class="fs-5">
+      Connectez-vous aux meilleurs freelances africains rapidement
+    </h2>
 
-<div class="mt-3">
-  <a href="freelances.html" class="btn btn-primary me-2">Je suis Freelance</a>
-  <a href="freelances.html" class="btn btn-outline-light">Je cherche un Freelance</a>
+    <div class="mt-3">
+      <a href="freelances.html" class="btn btn-primary me-2">Je suis Freelance</a>
+      <a href="freelances.html" class="btn btn-outline-light">Je cherche un Freelance</a>
+    </div>
+
+    <!-- CHIFFRES -->
+    <div class="row text-white text-center mt-5">
+
+  <div class="col-md-4">
+    <h1 class="display-5 counter" data-target="2500">0</h1>
+    <p>Freelances</p>
   </div>
 
-  <!--statist-->
- <div class="row text-white text-center mt-4">
+  <div class="col-md-4">
+    <h1 class="display-5 counter" data-target="800">0</h1>
+    <p>Entreprises</p>
+  </div>
 
-      <div class="col-md-4">
+  <div class="col-md-4">
+    <h1 class="display-5 counter" data-target="1200">0</h1>
+    <p>Missions réalisées</p>
+  </div>
 
-        <h1 class="display-5">+2500</h1>
+</div>
 
-        <p>Freelances</p>
-      </div>
-    
-      <div class="col-md-4">
-     <h1 class="display-5">+800</h1>
-     <p>Entreprises</p>
-       </div>
-
-      <div class="col-md-4">
-        
-        <h1 class="display-5">+12000</h1>
-        <p>Missions réalisées</p>
-    </div>
-    </div>
-    </div>
 </section>
 <!--comment ca marche-->
-<section class="py-5">
+<section class="how-section py-5">
+
   <div class="container">
-    <h2 class="text-center mb-4">Comment ça marche ? </h2>
 
-    <div class="row g-3">
+    <!-- Titre -->
+    <div class="text-center mb-5">
 
-      <div class="col-md-6">
-        <div class="card p-4 text-center h-100">
-          <img src="images/marche1.jpg" class="mb-3" width="60" alt="creer un compte">
-          <h3>01</h3>
-          <h5>Créer un compte</h5>
-          <p>
-            Inscription rapide avec ton email.<br>
-            tu remplis tes informations en quelques secondes.
-          </p>
-        </div>
+      <h2 class="fw-bold">
+        Comment ça marche ?
+      </h2>
+
+      <p class="text-muted">
+        Commence rapidement en 4 étapes simples
+      </p>
+
+    </div>
+
+    <!-- Bento Grid -->
+    <div class="bento-grid">
+
+      <!-- CARD 1 -->
+      <div class="bento-card card-1">
+
+        <i class="bi bi-person-plus-fill fs-1 mb-4 text-primary"></i>
+
+        <h1 class="fw-bold">
+          01
+        </h1>
+
+        <h3 class="fw-bold mt-3">
+          Créer un compte
+        </h3>
+
+        <p class="text-muted mt-3">
+          Inscription rapide avec ton email.
+          <br>
+          tu remplis tes informations en quelques secondes.
+        </p>
+
       </div>
 
-      <div class="col-md-6 col-lg-3">
-        <div class="card p-4 text-center h-100">
-          <img src="images/marche2.jpg" class="mb-3" width="60" alt="Rechercher">
-          <h3>02</h3>
-          <h5>Rechercher</h5>
-          <p>
-            Explore les services.<br>
-            utilise la barre de recherche facilement.
-          </p>
-        </div>
+      <!-- CARD 2 -->
+      <div class="bento-card card-2">
+
+        <i class="bi bi-search fs-1 mb-4 text-primary"></i>
+
+        <h1 class="fw-bold">
+          02
+        </h1>
+
+        <h4 class="fw-bold mt-3">
+          Rechercher
+        </h4>
+
+        <p class="text-muted mt-3">
+          Explore les services.
+          <br>
+          utilise la barre de recherche facilement.
+        </p>
+
       </div>
 
-      <div class="col-md-6 col-lg-3">
-        <div class="card p-4 text-center h-100">
-          <img src="images/marche3.jpg" class="mb-3" width="60" alt="choisir">
-          <h3>03</h3>
-          <h5>Choisir</h5>
-          <p>
-            Compare les options proposees.<br>
-            selectionne ce qui te convient.
-          </p>
-        </div>
+      <!-- CARD 3 -->
+      <div class="bento-card card-3">
+
+        <i class="bi bi-check2-circle fs-1 mb-4 text-primary"></i>
+
+        <h1 class="fw-bold">
+          03
+        </h1>
+
+        <h4 class="fw-bold mt-3">
+          Choisir
+        </h4>
+
+        <p class="text-muted mt-3">
+          Compare les options proposées.
+          <br>
+          sélectionne ce qui te convient.
+        </p>
+
       </div>
 
-      <div class="col-md-12">
-        <div class="card p-4 text-center">
-          <img src="images/marche4.jpg" class="mb-3" width="60" alt="Demarrer">
-          <h3>04</h3>
-          <h5>Démarrer</h5>
-          <p>
-            Passe à l'action immédiatement.<br>
-            commence ton activite facilement.
-          </p>
-        </div>
+      <!-- CARD 4 -->
+      <div class="bento-card card-4">
+
+        <i class="bi bi-rocket-takeoff-fill fs-1 mb-4 text-primary"></i>
+
+        <h1 class="fw-bold">
+          04
+        </h1>
+
+        <h3 class="fw-bold mt-3">
+          Démarrer
+        </h3>
+
+        <p class="text-muted mt-3">
+          Lance ton activité immédiatement.
+        </p>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
  <!-- Section Services -->
@@ -178,7 +227,7 @@ rel="stylesheet">
 
       <!-- Développement Web -->
       <div class="col-md-4">
-        <div class="card text-center p-4 h-100">
+        <div class="card service-card text-center p-4 h-100">
           <i class="bi bi-code-slash fs-1 text-primary"></i>
           <h5 class="fw-bold mt-2">Développement Web</h5>
           <span class="text-muted">+350 freelances disponibles</span>
@@ -187,7 +236,7 @@ rel="stylesheet">
 
       <!-- Design Graphique -->
       <div class="col-md-4">
-        <div class="card text-center p-4 h-100">
+        <div class="card service-card text-center p-4 h-100">
           <i class="bi bi-palette fs-1 text-primary"></i>
           <h5 class="fw-bold mt-2">Design Graphique</h5>
           <span class="text-muted">+220 freelances disponibles</span>
@@ -196,7 +245,7 @@ rel="stylesheet">
 
       <!-- Marketing Digital -->
       <div class="col-md-4">
-        <div class="card text-center p-4 h-100">
+        <div class="card service-card text-center p-4 h-100">
           <i class="bi bi-megaphone fs-1 text-primary"></i>
           <h5 class="fw-bold mt-2">Marketing Digital</h5>
           <span class="text-muted">+180 freelances disponibles</span>
@@ -205,7 +254,7 @@ rel="stylesheet">
 
       <!-- Data & IA -->
       <div class="col-md-4">
-        <div class="card text-center p-4 h-100">
+        <div class="card service-card text-center p-4 h-100">
           <i class="bi bi-cpu fs-1 text-primary"></i>
           <h5 class="fw-bold mt-2">Data & IA</h5>
           <span class="text-muted">+120 freelances disponibles</span>
@@ -214,7 +263,7 @@ rel="stylesheet">
 
       <!-- Rédaction Tech -->
       <div class="col-md-4">
-        <div class="card text-center p-4 h-100">
+        <div class="card service-card text-center p-4 h-100">
           <i class="bi bi-pencil-square fs-1 text-primary"></i>
           <h5 class="fw-bold mt-2">Rédaction Tech</h5>
           <span class="text-muted">+90 freelances disponibles</span>
@@ -223,7 +272,7 @@ rel="stylesheet">
 
       <!-- DevOps & Cloud -->
       <div class="col-md-4">
-        <div class="card text-center p-4 h-100">
+        <div class="card service-card text-center p-4 h-100">
           <i class="bi bi-cloud-check fs-1 text-primary"></i>
           <h5 class="fw-bold mt-2">DevOps & Cloud</h5>
           <span class="text-muted">+140 freelances disponibles</span>
@@ -351,7 +400,7 @@ rel="stylesheet">
     </a>
   </div>
 </section>
- <!-- Pied de page -->
+ <!-- footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="row g-4">
