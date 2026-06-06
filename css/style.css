@@ -226,3 +226,83 @@ body .btn-primary:hover {
   border: 1px solid #7cb8fd !important;
   box-shadow: 0 0 15px rgba(78, 130, 194, 0.3) !important;
 }
+
+/* COMMIT 5  */
+
+/* TABLETTE (768px) */
+@media (max-width: 768px) {
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .card img,
+  .service-card img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .site-footer {
+    text-align: center;
+  }
+
+  main .container {
+    padding: 0 15px;
+  }
+}
+
+
+/* MOBILE (576px) */
+@media (max-width: 576px) {
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .card img,
+  .service-card img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/* DESKTOP (1200px+) */
+@media (min-width: 1200px) {
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+
+
