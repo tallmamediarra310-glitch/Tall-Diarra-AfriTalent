@@ -61,3 +61,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// commit 7
+document.addEventListener("DOMContentLoaded", () => {
+
+  // COMPTEURS
+  const counters = document.querySelectorAll(".counter");
+
+  counters.forEach(counter => {
+
+    counter.innerText = "0";
+
+    const target = +counter.dataset.target;
+
+    function update() {
+      let current = +counter.innerText;
+      let step = target / 100;
+
+      if (current < target) {
+        counter.innerText = Math.ceil(current + step);
+        setTimeout(update, 20);
+      } else {
+        counter.innerText = target;
+      }
+    }
+
+    update();
+  });
+
+  // BACK TO TOP (sécurisé)
+  const btn = document.getElementById("backToTop");
+
+  if (btn) {
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+});
