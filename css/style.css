@@ -333,5 +333,9 @@ body.dark {
   display: none;
 }
 
+/* commit 8 */
+.hide {
+  display: none !important;
+}
 
 

@@ -98,3 +98,86 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+// COMMIT 8
+// filtrage
+const buttons = document.querySelectorAll("[data-filter]");
+const cards = document.querySelectorAll("[data-category]");
+
+buttons.forEach((button) => {
+
+  button.addEventListener("click", () => {
+
+    const filter = button.dataset.filter;
+
+    cards.forEach((card) => {
+
+      if (
+        filter === "all" ||
+        card.dataset.category === filter
+      ) {
+
+        card.parentElement.classList.remove("hide");
+
+      } else {
+
+        card.parentElement.classList.add("hide");
+
+      }
+
+    });
+
+  });
+
+});
+
+// VALIDATION FORMULAIRE
+
+const form = document.getElementById("contactForm");
+
+if(form){
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const prenom = document.getElementById("Prenom");
+const nom = document.getElementById("nom");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+
+let valide = true;
+
+// PRENOM
+if(prenom.value === ""){
+  prenom.classList.add("is-invalid");
+  valide = false;
+}
+
+// NOM
+if(nom.value === ""){
+  nom.classList.add("is-invalid");
+  valide = false;
+}
+
+// EMAIL
+if(email.value.indexOf("@") === -1){
+  email.classList.add("is-invalid");
+  valide = false;
+}
+
+// MESSAGE
+if(message.value.length < 20){
+  message.classList.add("is-invalid");
+  valide = false;
+}
+
+// SUCCES
+if(valide){
+  document.getElementById("successMessage").style.display = "block";
+  form.reset();
+}
+
+});
+
+}
